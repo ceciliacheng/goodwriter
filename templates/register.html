@@ -1,13 +1,22 @@
 {% extends "base.html" %}
 {% import "bootstrap/wtf.html" as wtf %}
-
 {% block title %}Goodwriter - Sign up{% endblock %}
-
 {% block page_content %}
-<div class="page-header">
-    <h1>Sign up</h1>
-</div>
-<div class="col-md-4">
-    {{ wtf.quick_form(form) }}
-</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Register</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.css">
+  </head>
+    <div class="page-header">
+        <h1>Sign up</h1>
+    </div>
+    <div class="col-md-4">
+        {{ wtf.quick_form(form) }}
+    </div>
+</html>
 {% endblock %}
+
+
