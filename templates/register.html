@@ -12,10 +12,29 @@
   </head>
     <div class="page-header">
         <h1>Sign up</h1>
-    </div>
-    <div class="col-md-4">
+        </div>
+        <div id="u164" class="ax_default checkbox">
+            <label for="u164_input">
+                <!--Unnamed()-->
+                <div id="u165" class="text" style="visibility: visible;"><p><span>Remember me</span></p>
+                </div>
+            </label>
+        <input id="u164_input" type="checkbox" value="checkbox">
+        <!-- 矩形-->
+        <div id="u166" class="ax_default box_3">
+            <div id="u166_div" class=""></div>
+            <!-- Unnamed-->
+            <div id="u167" class="text" style="visibility: visible;">
+                <p><span>&nbsp;&nbsp;&nbsp;Forget Password</span></p>
+                <div>
+                <p>New user?<a href="{{ url_for('auth.register') }}">Click here to register</a>.</p>
+                </div>
+            </div>
+        <div class="col-md-4">
         {{ wtf.quick_form(form) }}
+        </div>
     </div>
+
 </html>
 {% endblock %}
 
